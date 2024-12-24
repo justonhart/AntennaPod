@@ -28,7 +28,7 @@
             android:adjustViewBounds="true"
             android:importantForAccessibility="no"
             android:cropToPadding="true"
-            android:padding="8dp"
+            android:padding="2dp"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/ic_settings"
             tools:background="@android:color/holo_orange_dark"
@@ -38,8 +38,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_marginLeft="16dp"
-            android:layout_marginStart="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
             android:layout_weight="1"
             android:gravity="center_vertical"
             android:text="@string/settings_label"
@@ -59,19 +59,19 @@
         tools:background="@android:color/holo_red_dark" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/nav_list"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/divider"
-        android:choiceMode="singleChoice"
-        android:clipToPadding="false"
-        android:divider="@android:color/transparent"
-        android:layout_alignParentTop="true"
-        android:dividerHeight="0dp"
-        android:paddingBottom="@dimen/list_vertical_padding"
-        android:paddingTop="8dp"
-        android:scrollbarStyle="outsideOverlay"
-        tools:listitem="@layout/nav_listitem" />
+            android:id="@+id/nav_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/divider"
+            android:choiceMode="singleChoice"
+            android:clipToPadding="false"
+            android:divider="@android:color/transparent"
+            android:layout_alignParentTop="true"
+            android:dividerHeight="0dp"
+            android:paddingBottom="@dimen/list_vertical_padding"
+            android:paddingTop="4dp"
+            android:scrollbarStyle="outsideOverlay"
+            tools:listitem="@layout/nav_listitem" />
 
     <ProgressBar
         android:id="@+id/progressBar"
